@@ -8,10 +8,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableSwagger2Doc
 @SpringBootApplication
 @MapperScan("com.ffwl.concert.dao")
+@EnableFeignClients
 public class ConcertApplication {
 
     public static void main(String[] args) {
